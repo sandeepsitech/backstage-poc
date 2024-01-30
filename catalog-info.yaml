@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: JPL_backstage-poc
+  description: >
+    JPL Backstage PoC is an open-source developer portal that puts the
+    developer experience first.
+  links:
+    - title: Website
+      url: http://jio.com
+    - title: Documentation
+      url: https://jio.com/docs
+    - title: Storybook
+      url: https://jio.com/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
+  annotations: null
+  github.com/project-slug: sandeepsitech/backstage-poc
+  jio.com/techdocs-ref: dir:.
+  lighthouse.com/website-url: https://jio.com
+spec:
+  type: library
+  owner: JPL_POC
+  lifecycle: PoC
