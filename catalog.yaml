@@ -1,11 +1,24 @@
 apiVersion: backstage.io/v1alpha1
-kind: Api
+kind: API
 metadata:
-  name: OpenWeatherMapApi
-  title: OpenWeatherMap API
+  name: artist-api
+  description: Retrieve artist details
 spec:
-  specUrl: https://storage.googleapis.com/zapvine-prod.appspot.com/specs/weather--vicentescode.repl.co.yaml
-  owner: Backstage Team
-  type: external
-  description: Access weather data from various locations around the world.
-  tags: weather, forecast, climate
+  type: openapi
+  lifecycle: production
+  owner: artist-relations-team
+  system: artist-engagement-portal
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Artist API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /artists:
+        get:
+          summary: List all artists
+    ...
