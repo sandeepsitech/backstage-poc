@@ -4,7 +4,7 @@ metadata:
   name: OpenWeatherMapApi
   title: OpenWeatherMap API
 spec:
-  specUrl: https://raw.githubusercontent.com/openweathermap/weather-api/master/swagger.json
+  specUrl: https://storage.googleapis.com/zapvine-prod.appspot.com/specs/weather--vicentescode.repl.co.yaml
   owner: Backstage Team
   type: external
   description: Access weather data from various locations around the world.
