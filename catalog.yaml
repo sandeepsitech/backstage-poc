@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Api
 metadata:
-  name: PetStoreAPI
-  title: PetStore API
+  name: OpenWeatherMapApi
+  title: OpenWeatherMap API
 spec:
-  specUrl: https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v2.0/json/petstore-simple.json
-  owner: JPL Backstage Team
+  specUrl: https://raw.githubusercontent.com/openweathermap/weather-api/master/swagger.json
+  owner: Backstage Team
   type: external
-  description: Petstore APIs
-  tags: pet
+  description: Access weather data from various locations around the world.
+  tags: weather, forecast, climate
